@@ -1,3 +1,9 @@
+//=====================================
+// Author:              Gail C
+// Date Created:        10/19/2024
+// Date Last Revised:   10/23/2024
+//=====================================
+
 import java.util.*;
 
 public class CharacterCounter 
