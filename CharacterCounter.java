@@ -36,8 +36,9 @@ public class CharacterCounter
                     System.out.println("String Entered: " + input);
                     System.out.println("---------------------------");
 
-                    // Count occurrences of each ASCII character
-                    int[] charCount = new int[128]; // ASCII characters range from 0 to 127
+                    //Takes the sring from the input and counts the char.
+                    int[] charCount = countChar(input);
+                    
 
                     //Loops through the input string to count the number of charaters
                     for (char c : input.toCharArray()) 
@@ -93,5 +94,18 @@ public class CharacterCounter
 
         System.out.println("Program exited.");
     }//End Main
+
+    private static int[] countChar(String input) {
+        int[] charCount = new int[128]; // ASCII characters range from 0 to 127
+
+        // Loop through the input string to count characters
+        for (char c : input.toCharArray()) 
+        {
+            if (c < 128) { // Only consider ASCII characters
+                charCount[c]++;
+            }
+        }
+        return charCount;
+    }
 }
 
