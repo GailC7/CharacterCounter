@@ -1,0 +1,14 @@
++-----------------------------------------------------------------------------------+
+|   CharacterCounter                                                                |
++-----------------------------------------------------------------------------------+
+| - scanner: Scanner                                                                |
+| - using: boolean                                                                  |
++-----------------------------------------------------------------------------------+
+| + main(args: String[]): void                                                      |
+| - charCalculater(input: String): void                                             |  
+| - countChar(input: String): int[]                                                 |
+| - buildCountList(charCount: int[]): List<Map.Entry<Character, Integer>>           |
+| - topChars(countList: List<Map.Entry<Character, Integer>>, topChars: int): void   |
+| - undetectedChars(countList: List<Map.Entry<Character, Integer>>): void           |
+| - reversedString(input: String): void                                             |
++-----------------------------------------------------------------------------------+
